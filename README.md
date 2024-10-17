@@ -2,8 +2,6 @@
 
 ![Demo App](https://i.ibb.co/BnGdh10/Group-62.png)
 
-[Video Tutorial on Youtube](https://youtu.be/G4V4xO9wyD8)
-
 Feature List:
 
 -   🌟 Tech stack: MERN + Socket.io + Chakra UI
