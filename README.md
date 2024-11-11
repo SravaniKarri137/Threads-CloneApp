@@ -1,6 +1,5 @@
-# 12+ Hour MERN Masterclass: Build and Deploy a Threads App with Real-Time Chat Functionality
 
-![Demo App](https://i.ibb.co/BnGdh10/Group-62.png)
+
 
 Feature List:
 
@@ -15,9 +14,6 @@ Feature List:
 -   🌓 Dark/Light Mode
 -   📱 Completely Responsive
 -   💬 Chat App With Image Support
--   👀 Seen/Unseen Status for Messages
--   🔊 Notification sounds
--   ⭐ Deployment for FREE
 
 ### Setup .env file
 
