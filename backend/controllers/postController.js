@@ -141,7 +141,8 @@ const getFeedPosts = async (req, res) => {
 		if (!user) {
 			return res.status(404).json({ error: "User not found" });
 		}
-
+ //Finds the current user (req.user._id) and retrieves their following array.
+//Queries the Post model for posts by any users in the following list, sorted in descending order by creation date.
 		const following = user.following;
 
 		const feedPosts = await Post.find({ postedBy: { $in: following } }).sort({ createdAt: -1 });
@@ -159,7 +160,7 @@ const getUserPosts = async (req, res) => {
 		if (!user) {
 			return res.status(404).json({ error: "User not found" });
 		}
-
+//If the user is found, retrieves all posts associated with user._id, sorted by creation date.
 		const posts = await Post.find({ postedBy: user._id }).sort({ createdAt: -1 });
 
 		res.status(200).json(posts);
