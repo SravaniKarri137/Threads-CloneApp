@@ -10,6 +10,7 @@ import {
 	freezeAccount,
 } from "../controllers/userController.js";
 import protectRoute from "../middlewares/protectRoute.js";
+//protectRoute middleware is imported to secure routes, ensuring that certain actions are available only to authenticated users.
 
 const router = express.Router();
 
