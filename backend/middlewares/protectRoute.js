@@ -10,7 +10,7 @@ const protectRoute = async (req, res, next) => {
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
 		const user = await User.findById(decoded.userId).select("-password");
-
+//                After decoding the token, the userId contained in the token is used to find the corresponding user in the database. The select("-password") ensures that the user’s password is not returned in the query.
 		req.user = user;
 
 		next();
